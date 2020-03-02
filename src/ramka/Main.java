@@ -7,7 +7,7 @@ public class Main {
     public Main() {
         JFrame frame = new JFrame();
 
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
 
