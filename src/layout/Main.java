@@ -1,4 +1,4 @@
-package ukladGraficzny;
+package layout;
 
 import javax.swing.*;
 import java.awt.*;

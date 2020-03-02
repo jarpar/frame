@@ -1,7 +1,6 @@
-package ramka;
+package frame;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class Main extends JFrame {
     public Main() {

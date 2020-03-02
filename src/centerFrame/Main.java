@@ -1,4 +1,4 @@
-package centrowanieRamki;
+package centerFrame;
 
 import javax.swing.*;
 import java.awt.*;

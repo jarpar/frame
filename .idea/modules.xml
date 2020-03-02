@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ramka.iml" filepath="$PROJECT_DIR$/ramka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frame.iml" filepath="$PROJECT_DIR$/frame.iml" />
     </modules>
   </component>
 </project>
