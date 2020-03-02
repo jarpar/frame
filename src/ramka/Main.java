@@ -13,8 +13,10 @@ public class Main {
         //frame.setLocation(new Point(100, 50));
         frame.setBounds(100, 50, 640, 480);
         //frame.setResizable(false);
+        frame.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/user/IdeaProjects/ramka/src/ramka/icon.jpg"));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
+
     }
 
     public static void main(String[] args) {
