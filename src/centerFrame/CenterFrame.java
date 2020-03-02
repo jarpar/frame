@@ -3,8 +3,8 @@ package centerFrame;
 import javax.swing.*;
 import java.awt.*;
 
-public class Main extends JFrame {
-    public Main() {
+public class CenterFrame extends JFrame {
+    public CenterFrame() {
         int width = Toolkit.getDefaultToolkit().getScreenSize().width;
         int height = Toolkit.getDefaultToolkit().getScreenSize().height;
         //System.out.println(width + " x " + height);
@@ -18,6 +18,6 @@ public class Main extends JFrame {
 
 
     public static void main(String[] args) {
-        new Main().setVisible(true);
+        new CenterFrame().setVisible(true);
     }
 }

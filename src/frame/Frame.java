@@ -2,8 +2,8 @@ package frame;
 
 import javax.swing.*;
 
-public class Main extends JFrame {
-    public Main() {
+public class Frame extends JFrame {
+    public Frame() {
 /*        JFrame frame = new JFrame("Tytuł ramki");
         //frame.setTitle("Tytuł ramki");
         //frame.setSize(640, 480);
@@ -25,6 +25,6 @@ public class Main extends JFrame {
     }
 
     public static void main(String[] args) {
-        new Main().setVisible(true);
+        new Frame().setVisible(true);
     }
 }

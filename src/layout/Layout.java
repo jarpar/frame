@@ -3,8 +3,8 @@ package layout;
 import javax.swing.*;
 import java.awt.*;
 
-public class Main extends JFrame {
-    public Main() {
+public class Layout extends JFrame {
+    public Layout() {
         super("Layout");
         this.setBounds(300, 320, 300, 200);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -43,6 +43,6 @@ public class Main extends JFrame {
     JButton right;
 
     public static void main(String[] args) {
-        new Main().setVisible(true);
+        new Layout().setVisible(true);
     }
 }
