@@ -10,8 +10,10 @@ public class Main extends JFrame {
         //System.out.println(width + " x " + height);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setSize(width / 2, height / 2);
-        this.setLocation(width / 4, height / 4);
-
+        //this.setLocation(width / 4, height / 4);
+        int widthFrame = this.getSize().width;
+        int heightFrame = this.getSize().height;
+        this.setLocation((width - widthFrame) / 2, (height - heightFrame) / 2);
     }
 
 
