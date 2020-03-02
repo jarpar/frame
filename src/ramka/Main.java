@@ -3,9 +3,9 @@ package ramka;
 import javax.swing.*;
 import java.awt.*;
 
-public class Main {
+public class Main extends JFrame {
     public Main() {
-        JFrame frame = new JFrame("Tytuł ramki");
+/*        JFrame frame = new JFrame("Tytuł ramki");
         //frame.setTitle("Tytuł ramki");
         //frame.setSize(640, 480);
         //frame.setSize(new Dimension(640, 480));
@@ -16,10 +16,16 @@ public class Main {
         frame.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/user/IdeaProjects/ramka/src/ramka/icon.jpg"));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setVisible(true);
+        */
 
+        super("Tytuł ramki");
+        this.setBounds(100, 50, 640, 480);
+
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        //this.pack();
     }
 
     public static void main(String[] args) {
-        new Main();
+        new Main().setVisible(true);
     }
 }
