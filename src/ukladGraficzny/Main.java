@@ -9,7 +9,7 @@ public class Main extends JFrame {
         this.setBounds(300, 320, 300, 200);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         initComponents();
-        //this.pack();
+        this.pack();
 
     }
 
@@ -23,16 +23,17 @@ public class Main extends JFrame {
 
         Container container = this.getContentPane();
 
-//        container.add(center, BorderLayout.CENTER);
-//        container.add(up, BorderLayout.PAGE_START);
-//        container.add(down, BorderLayout.PAGE_END);
-//        container.add(left, BorderLayout.LINE_START);
-//        container.add(right, BorderLayout.LINE_END);
+        container.add(center, BorderLayout.CENTER);
+        container.add(up, BorderLayout.PAGE_START);
+        container.add(down, BorderLayout.PAGE_END);
+        container.add(left, BorderLayout.LINE_START);
+        container.add(right, BorderLayout.LINE_END);
 
-        container.setLayout(null);
-        container.add(center);
-        center.setLocation(100, 50);
-        center.setSize(100, 50);
+//        container.setLayout(null);
+//        center.setLocation(100, 20);
+//        center.setSize(100, 50);
+//        container.add(center);
+
     }
 
     JButton center;
