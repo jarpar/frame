@@ -1,6 +1,8 @@
 package swingExample;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class AppAnother extends JFrame {
     public AppAnother() {
@@ -12,7 +14,7 @@ public class AppAnother extends JFrame {
         setLayout(null);
 
         JLabel lblName = new JLabel();
-        lblName.setText("Jarek");
+        lblName.setText("Hello, World!");
         lblName.setBounds(40, 20, 100, 30);
         add(lblName);
 
@@ -20,7 +22,16 @@ public class AppAnother extends JFrame {
         inputName.setBounds(160, 20, 100, 30);
         add(inputName);
 
-
+        JButton buttonName = new JButton("Check author");
+        buttonName.setBounds(100, 70, 120, 30);
+        buttonName.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                lblName.setText("Jarek");
+            }
+        });
+        add(buttonName);
+        add(lblName);
     }
 
     public static void main(String[] args) {
