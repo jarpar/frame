@@ -31,7 +31,7 @@ public class AppAnother extends JFrame {
             }
         });
         add(buttonName);
-        add(lblName);
+
     }
 
     public static void main(String[] args) {
