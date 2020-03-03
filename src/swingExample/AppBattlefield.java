@@ -8,7 +8,7 @@ public class AppBattlefield extends JFrame {
     public AppBattlefield() {
         super("Super application to train");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800, 600);
+        setSize(300, 200);
         setLocationRelativeTo(null);
         setVisible(true);
         setLayout(null);
