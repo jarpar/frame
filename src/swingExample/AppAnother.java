@@ -22,12 +22,16 @@ public class AppAnother extends JFrame {
         inputName.setBounds(160, 20, 100, 30);
         add(inputName);
 
-        JButton buttonName = new JButton("Check author");
+        JLabel author = new JLabel(inputName.getText());
+        author.setBounds(150, 100, 120, 30);
+        add(author);
+
+        JButton buttonName = new JButton("Print input");
         buttonName.setBounds(100, 70, 120, 30);
         buttonName.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                lblName.setText("Jarek");
+                author.setText(inputName.getText());
             }
         });
         add(buttonName);
