@@ -20,18 +20,19 @@ public class AppBattlefield extends JFrame {
 
         JTextField inputName = new JTextField();
         inputName.setBounds(160, 20, 100, 30);
+        inputName.setToolTipText("Enter name");
         add(inputName);
 
-        JLabel author = new JLabel(inputName.getText());
+        JLabel author = new JLabel();
         author.setBounds(150, 100, 120, 30);
         add(author);
 
-        JButton buttonName = new JButton("Print input");
+        JButton buttonName = new JButton("Print");
         buttonName.setBounds(100, 70, 120, 30);
         buttonName.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                author.setText(inputName.getText());
+                author.setText("Hello, " + inputName.getText() + "!");
             }
         });
         add(buttonName);
