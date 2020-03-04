@@ -1,6 +1,7 @@
 package swingExample;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -8,7 +9,7 @@ public class AppBattlefield extends JFrame {
     public AppBattlefield() {
         super("Super application to train");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300, 200);
+        setSize(300, 250);
         setLocationRelativeTo(null);
         setVisible(true);
         setLayout(null);
@@ -28,7 +29,7 @@ public class AppBattlefield extends JFrame {
         add(author);
 
         JButton buttonName = new JButton("Print");
-        buttonName.setBounds(100, 70, 120, 30);
+        buttonName.setBounds(100, 60, 120, 30);
         buttonName.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -37,7 +38,18 @@ public class AppBattlefield extends JFrame {
         });
         add(buttonName);
 
+        JButton colorRed = new JButton("Red");
+        colorRed.setBounds(100, 150, 120, 30);
+        colorRed.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                colorRed.setBackground(Color.red);
+            }
+        });
+        add(colorRed);
+
     }
+
 
     public static void main(String[] args) {
         new AppBattlefield();
