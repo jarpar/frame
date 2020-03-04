@@ -47,7 +47,6 @@ public class AppBattlefield extends JFrame {
             }
         });
         add(colorRed);
-
     }
 
 
