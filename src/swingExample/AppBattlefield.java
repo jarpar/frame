@@ -25,7 +25,7 @@ public class AppBattlefield extends JFrame {
         add(inputName);
 
         JLabel author = new JLabel();
-        author.setBounds(150, 100, 120, 30);
+        author.setBounds(100, 100, 120, 30);
         add(author);
 
         JButton buttonName = new JButton("Print");
@@ -38,15 +38,21 @@ public class AppBattlefield extends JFrame {
         });
         add(buttonName);
 
+        JPanel redPanel = new JPanel();
+        redPanel.setBounds(100, 125, 120, 20);
+        redPanel.setLayout(new BorderLayout());
+        add(redPanel);
+
         JButton colorRed = new JButton("Red");
         colorRed.setBounds(100, 150, 120, 30);
         colorRed.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                colorRed.setBackground(Color.red);
+                redPanel.setBackground(Color.red);
             }
         });
         add(colorRed);
+
     }
 
 
