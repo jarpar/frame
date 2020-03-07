@@ -13,7 +13,7 @@ public class AppBattlefield extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
         setLayout(null);
-        int deleteMe;
+
         JLabel lblName = new JLabel();
         lblName.setText("Hello, World!");
         lblName.setBounds(40, 20, 100, 30);
